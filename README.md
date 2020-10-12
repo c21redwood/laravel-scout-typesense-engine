@@ -16,7 +16,7 @@ This package makes it easy to add full text search support to your models with L
 You can install the package via composer:
 
 ``` bash
-composer require devloopsnet/laravel-typesense
+composer require c21redwood/laravel-typesense
 ```
 
 Add the service provider:
@@ -25,7 +25,7 @@ Add the service provider:
 // config/app.php
 'providers' => [
     // ...
-    Devloops\LaravelTypesense\TypesenseServiceProvider::class,
+    Redwood\LaravelTypesense\TypesenseServiceProvider::class,
 ],
 ```
 
@@ -86,7 +86,7 @@ define the fields you want to make searchable by defining the `toSearchableArray
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Devloops\LaravelTypesense\Interfaces\TypesenseSearch;
+use Redwood\LaravelTypesense\Interfaces\TypesenseSearch;
 use Laravel\Scout\Searchable;
 
 class Post extends Model implements TypesenseSearch
@@ -159,6 +159,7 @@ The `searchable()` method will chunk the results of the query and add the record
 ## Author
 
 - [Abdullah Al-Faqeir](https://github.com/abdullahfaqeir)
+- [Aaron Collegeman](https://github.com/collegeman)
 
 ## License
 

@@ -1,5 +1,5 @@
 {
-  "name": "devloopsnet/laravel-typesense",
+  "name": "c21redwood/laravel-typesense",
   "description": "Typesense laravel/scout engine",
   "keywords": [
     "laravel",
@@ -7,7 +7,7 @@
     "search"
   ],
   "type": "library",
-  "homepage": "https://www.devloops.net",
+  "homepage": "https://github.com/c21redwood/laravel-typesense",
   "license": "MIT",
   "authors": [
     {
@@ -15,21 +15,33 @@
       "email": "abdullah@devloops.net",
       "homepage": "https://www.devloops.net",
       "role": "Developer"
+    },
+    {
+      "name": "Aaron Collegeman",
+      "email": "aaon@c21redwood.com",
+      "homepage": "https://github.com/c21redwood",
+      "role": "Developer"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/c21redwood/typesense-php.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
-      "Devloops\\LaravelTypesense\\": "src/"
+      "Redwood\\LaravelTypesense\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Devloops\\LaravelTypesense\\TypesenseServiceProvider"
+        "Redwood\\LaravelTypesense\\TypesenseServiceProvider"
       ],
       "aliases": {
-        "Typesense": "Devloops\\LaravelTypesense\\TypesenseFacade"
+        "Typesense": "Redwood\\LaravelTypesense\\TypesenseFacade"
       }
     }
   },
@@ -42,10 +54,10 @@
     "illuminate/pagination": "^6.0|^7.0",
     "illuminate/queue": "^6.0|^7.0",
     "illuminate/support": "^6.0|^7.0",
-    "devloopsnet/typesens-php": "^2.0"
+    "c21redwood/typesense-php": "*"
   },
   "suggest": {
-    "devloopsnet/typesens-php": "Required to use the Typesense php client."
+    "c21redwood/typesense-php": "Required to use the Typesense php client."
   },
   "require-dev": {
     "phpunit/phpunit": "^8.0|^9.0",

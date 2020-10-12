@@ -1,11 +1,11 @@
 <?php
 
-namespace Devloops\LaravelTypesense\Interfaces;
+namespace Redwood\LaravelTypesense\Interfaces;
 
 /**
  * Interface TypesenseSearch
  *
- * @package Devloops\LaravelTypesense\Interfaces
+ * @package Redwood\LaravelTypesense\Interfaces
  */
 interface TypesenseSearch
 {
